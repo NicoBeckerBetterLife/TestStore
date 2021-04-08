@@ -27,5 +27,26 @@
     <Folder Include="Models\Auth\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Migrations\20210407183337_initDB.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Migrations\20210407205321_addedCartItem.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Migrations\20210407213856_addIdentity.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Migrations\20210408171819_tokens.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Migrations\20210408200955_AddOrderIdAndDate.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Migrations\SmartHardwareStoreDbContextModelSnapshot.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 
 </Project>

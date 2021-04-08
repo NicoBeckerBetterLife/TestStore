@@ -5,6 +5,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
-    <History>True|2021-04-08T21:06:23.4130114Z;False|2021-04-08T23:05:54.2757954+02:00;False|2021-04-08T23:05:13.6722580+02:00;True|2021-04-08T22:57:34.1775580+02:00;</History>
+    <History>True|2021-04-08T22:00:18.5892283Z;False|2021-04-08T23:58:22.7597588+02:00;True|2021-04-08T23:56:05.4732991+02:00;True|2021-04-08T23:53:48.0191079+02:00;False|2021-04-08T23:53:30.4271563+02:00;True|2021-04-08T23:45:20.1569880+02:00;True|2021-04-08T23:27:41.7906090+02:00;True|2021-04-08T23:26:41.0998848+02:00;True|2021-04-08T23:25:17.8233008+02:00;True|2021-04-08T23:18:51.8301121+02:00;True|2021-04-08T23:06:23.4130114+02:00;False|2021-04-08T23:05:54.2757954+02:00;False|2021-04-08T23:05:13.6722580+02:00;True|2021-04-08T22:57:34.1775580+02:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=SmartHardwareStore%3bTrusted_Connection=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>

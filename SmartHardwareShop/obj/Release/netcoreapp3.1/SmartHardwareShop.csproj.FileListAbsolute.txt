@@ -144,3 +144,9 @@ C:\OtherRepo\TestStore\SmartHardwareShop\obj\Release\netcoreapp3.1\SmartHardware
 C:\OtherRepo\TestStore\SmartHardwareShop\obj\Release\netcoreapp3.1\SmartHardwareShop.pdb
 C:\OtherRepo\TestStore\SmartHardwareShop\obj\Release\netcoreapp3.1\SmartHardwareShop.genruntimeconfig.cache
 C:\OtherRepo\TestStore\SmartHardwareShop\obj\Release\netcoreapp3.1\SmartHardwareShop.csprojAssemblyReference.cache
+C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\Migrations\20210407183337_initDB.cs
+C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\Migrations\20210407205321_addedCartItem.cs
+C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\Migrations\20210407213856_addIdentity.cs
+C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\Migrations\20210408171819_tokens.cs
+C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\Migrations\20210408200955_AddOrderIdAndDate.cs
+C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\Migrations\SmartHardwareStoreDbContextModelSnapshot.cs

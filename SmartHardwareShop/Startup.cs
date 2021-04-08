@@ -37,6 +37,21 @@ namespace SmartHardwareShop
             services.AddControllers();
            
             AddMappingsForDependencyInjection(services);
+
+        }
+
+        private void InitializeDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<SmartHardwareStoreDbContext>();
+                context.Database.EnsureCreated();
+            }
+
+            //using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            //{
+            //    scope.ServiceProvider.GetRequiredService<SmartHardwareStoreDbContext>().Database.Migrate();
+            //}
         }
 
         /// <summary>
@@ -123,6 +138,8 @@ namespace SmartHardwareShop
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            InitializeDatabase(app);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
