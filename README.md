@@ -9,3 +9,5 @@ You can add a admin user to add products and edit them /api/Authenticate/registe
 You can add a Customer user  /api/Authenticate/register
 
 Deleting a Product is done by editing and setting the IsDeleted flag to true (This is due to the relational dependancy in the Cart table)
+
+The app is using a SQL LocalDB and can be accessed using SSMS. (Server "(LocalDb)\MSSQLLocalDB")
