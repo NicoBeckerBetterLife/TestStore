@@ -1,11 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -15,12 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Newtonsoft.Json.Serialization;
 using SmartHardwareShop.DBContexts;
 using SmartHardwareShop.Models.Auth;
 using SmartHardwareShop.Services;
 using SmartHardwareShop.Services.DataAccess;
-using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Text;
 
 namespace SmartHardwareShop
 {
@@ -36,7 +28,7 @@ namespace SmartHardwareShop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            SetupDbContext(services);
+            SetupDbContextAndIdentity(services);
 
             services.AddMvc();
 
@@ -45,19 +37,18 @@ namespace SmartHardwareShop
             services.AddControllers();
            
             AddMappingsForDependencyInjection(services);
-
-
-           
-
         }
 
+        /// <summary>
+        /// We need to add all other mappings here
+        /// </summary>
+        /// <param name="services"></param>
         private static void AddMappingsForDependencyInjection(IServiceCollection services)
         {
             services.AddScoped<ProductService, ProductService>();
             services.AddScoped<ProductDataAccessService, ProductDataAccessService>();
             services.AddScoped<CartService, CartService>();
             services.AddScoped<CartItemDataAccessService, CartItemDataAccessService>();
-
         }
 
         private static void SetupSwagger(IServiceCollection services)
@@ -94,19 +85,15 @@ namespace SmartHardwareShop
             });
         }
 
-        private void SetupDbContext(IServiceCollection services)
+        private void SetupDbContextAndIdentity(IServiceCollection services)
         {
             services.AddDbContext<SmartHardwareStoreDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
 
             // For Identity  
             services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<SmartHardwareStoreDbContext>()
                 .AddDefaultTokenProviders();
-
-
-         
 
             // Adding Authentication  
             services.AddAuthentication(options =>
@@ -154,9 +141,6 @@ namespace SmartHardwareShop
             });
 
             SetupSwaggerUi(app);
-
-
-
         }
 
         private static void SetupSwaggerUi(IApplicationBuilder app)
@@ -172,36 +156,5 @@ namespace SmartHardwareShop
                 c.OAuthAppName("OAuth-app");
             });
         }
-
-        public class OAuth2OperationFilter : IOperationFilter
-        {
-            public void Apply(OpenApiOperation operation, OperationFilterContext context)
-            {
-
-                var isAuthorized = context.MethodInfo.DeclaringType.GetCustomAttributes(true).OfType<AuthorizeAttribute>().Any() ||
-                                   context.MethodInfo.GetCustomAttributes(true).OfType<AuthorizeAttribute>().Any();
-
-
-                if (!isAuthorized) return;
-
-                operation.Responses.TryAdd("401", new OpenApiResponse { Description = "Unauthorized" });
-                operation.Responses.TryAdd("403", new OpenApiResponse { Description = "Forbidden" });
-
-
-                var oauth2SecurityScheme = new OpenApiSecurityScheme()
-                {
-                    Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "oauth2" },
-                };
-
-                operation.Security.Add(new OpenApiSecurityRequirement()
-                {
-                    [oauth2SecurityScheme] = new[] { "thecodebuzz" } //'thecodebuzz' is scope here
-
-                });
-
-            }
-        }
-
-
     }
 }

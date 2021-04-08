@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e0bWLFYaT1fNo0hQ7cvwHKHgMo/l2ylcRC82TR47Ftus1OufUT9Gie7YlyTv0KaAbVfEd3W/rymUcv3YnWI3qw==",
+  "dgSpecHash": "wZOL8vxpmiB8sZe0jt5y9/5xE1bqIBmWnBdP1knIQaW2DGfEoLp9LGUnTsXk9tEgwGzixkoiQmBegOjEvwQ+6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nico.becker\\source\\repos\\SmartHardwareShop\\SmartHardwareShop\\SmartHardwareShop.csproj",
+  "projectFilePath": "C:\\OtherRepo\\TestStore\\SmartHardwareShop\\SmartHardwareShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nico.becker\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.10\\microsoft.aspnetcore.authentication.jwtbearer.3.1.10.nupkg.sha512",

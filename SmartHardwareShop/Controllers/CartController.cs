@@ -1,11 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SmartHardwareShop.Services;
+using System.Threading.Tasks;
 
 namespace SmartHardwareShop.Controllers
 {
@@ -20,7 +16,6 @@ namespace SmartHardwareShop.Controllers
             _cartService = cartService;
         }
 
-        [AllowAnonymous]
         [HttpGet]
         [Route("GetBasket")]
         public async Task<IActionResult> GetBasket(string userName = null)
@@ -31,7 +26,6 @@ namespace SmartHardwareShop.Controllers
             return Ok(item);
         }
 
-        [AllowAnonymous]
         [HttpGet]
         [Route("AddItemToCart")]
         public async Task<IActionResult> AddItemToCart(int productId, int amount, string userName = null)
@@ -43,7 +37,6 @@ namespace SmartHardwareShop.Controllers
         }
 
 
-        [AllowAnonymous]
         [HttpGet]
         [Route("CheckoutCart")]
         public async Task<IActionResult> CheckoutCart(string userName = null)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nico.becker\\source\\repos\\SmartHardwareShop\\SmartHardwareShop\\SmartHardwareShop.csproj": {}
+    "C:\\OtherRepo\\TestStore\\SmartHardwareShop\\SmartHardwareShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nico.becker\\source\\repos\\SmartHardwareShop\\SmartHardwareShop\\SmartHardwareShop.csproj": {
+    "C:\\OtherRepo\\TestStore\\SmartHardwareShop\\SmartHardwareShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nico.becker\\source\\repos\\SmartHardwareShop\\SmartHardwareShop\\SmartHardwareShop.csproj",
+        "projectUniqueName": "C:\\OtherRepo\\TestStore\\SmartHardwareShop\\SmartHardwareShop.csproj",
         "projectName": "SmartHardwareShop",
-        "projectPath": "C:\\Users\\nico.becker\\source\\repos\\SmartHardwareShop\\SmartHardwareShop\\SmartHardwareShop.csproj",
+        "projectPath": "C:\\OtherRepo\\TestStore\\SmartHardwareShop\\SmartHardwareShop.csproj",
         "packagesPath": "C:\\Users\\nico.becker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nico.becker\\source\\repos\\SmartHardwareShop\\SmartHardwareShop\\obj\\",
+        "outputPath": "C:\\OtherRepo\\TestStore\\SmartHardwareShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
