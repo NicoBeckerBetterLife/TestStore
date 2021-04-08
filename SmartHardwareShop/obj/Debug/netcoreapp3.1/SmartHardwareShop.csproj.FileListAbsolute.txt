@@ -289,3 +289,4 @@ C:\OtherRepo\TestStore\SmartHardwareShop\obj\Debug\netcoreapp3.1\SmartHardwareSh
 C:\OtherRepo\TestStore\SmartHardwareShop\obj\Debug\netcoreapp3.1\SmartHardwareShop.dll
 C:\OtherRepo\TestStore\SmartHardwareShop\obj\Debug\netcoreapp3.1\SmartHardwareShop.pdb
 C:\OtherRepo\TestStore\SmartHardwareShop\obj\Debug\netcoreapp3.1\SmartHardwareShop.genruntimeconfig.cache
+C:\OtherRepo\TestStore\SmartHardwareShop\obj\Debug\netcoreapp3.1\SmartHardwareShop.csprojAssemblyReference.cache

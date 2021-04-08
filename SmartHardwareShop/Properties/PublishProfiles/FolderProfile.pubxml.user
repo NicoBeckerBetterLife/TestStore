@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\OtherRepo\TestStore\SmartHardwareShop\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2021-04-08T21:06:23.4130114Z;False|2021-04-08T23:05:54.2757954+02:00;False|2021-04-08T23:05:13.6722580+02:00;True|2021-04-08T22:57:34.1775580+02:00;</History>
+  </PropertyGroup>
+</Project>

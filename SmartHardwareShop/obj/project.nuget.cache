@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wZOL8vxpmiB8sZe0jt5y9/5xE1bqIBmWnBdP1knIQaW2DGfEoLp9LGUnTsXk9tEgwGzixkoiQmBegOjEvwQ+6w==",
+  "dgSpecHash": "xrNnF7Fj5E/83muvSdh9zTdFzBYiwrrnyrOEqC9LR+cYv+Jj6vUqUxTPFJFwnFyKBLXt6mBULpd67GCVWRBTeQ==",
   "success": true,
   "projectFilePath": "C:\\OtherRepo\\TestStore\\SmartHardwareShop\\SmartHardwareShop.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,7 @@
     "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
     "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.5\\microsoft.visualstudio.web.codegeneration.3.1.5.nupkg.sha512",
     "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.5\\microsoft.visualstudio.web.codegeneration.contracts.3.1.5.nupkg.sha512",
     "C:\\Users\\nico.becker\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.5\\microsoft.visualstudio.web.codegeneration.core.3.1.5.nupkg.sha512",
