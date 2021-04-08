@@ -28,7 +28,6 @@ namespace SmartHardwareShop.Services.DataAccess
 
         public async Task<CartItem> AddCartItem(CartItem cartItem)
         {
-
             _smartHardwareStoreDbContext.Add(cartItem);
 
             await SaveChanges();

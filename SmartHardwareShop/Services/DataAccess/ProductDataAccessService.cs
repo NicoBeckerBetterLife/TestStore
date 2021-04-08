@@ -48,7 +48,7 @@ namespace SmartHardwareShop.Services.DataAccess
 
         public async Task<Product> LoadProduct(int id)
         {
-           return await _smartHardwareStoreDbContext.Set<Product>().FirstOrDefaultAsync(a => a.ProductId == id);
+           return await _smartHardwareStoreDbContext.Set<Product>().FirstOrDefaultAsync(a => a.ProductId == id && !a.IsDeleted);
         }
 
         public async Task<ProductPagedListModel> SearchProduct(string search, int page, int pageSize)

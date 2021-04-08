@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using SmartHardwareShop.Contracts.Product;
 using SmartHardwareShop.DBContexts;
 using SmartHardwareShop.Extensions;
@@ -25,6 +26,8 @@ namespace SmartHardwareShop.Services
         {
             var user =await _cartItemDataAccessService.GetUserByName(userName);
             var product = await _productDataAccessService.LoadProduct(productId);
+
+            if (product is null) throw new Exception("Item Not Found");
 
             var amountToAdd = amount < product.Quantity ? amount : product.Quantity;
 
