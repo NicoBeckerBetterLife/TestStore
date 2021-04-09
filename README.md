@@ -2,7 +2,7 @@
 
 You can clone the Repo
 If you want to run the app just execute the /publish/SmartHardwareShop.exe
-Then navigate to #https://localhost:5001/swagger/index.html
+Then navigate to https://localhost:5001/swagger/index.html
 
 You will be able to Add users as you want. This has not been secured for test usage.
 
